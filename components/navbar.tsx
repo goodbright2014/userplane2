@@ -36,7 +36,7 @@ export function NavBar({categories, selectedCategoryName}
 
           <Link href="/">
             <Heading size={[2, 3, 4]}>
-              <span style={{fontWeight: 'lighter'}}>Life</span>styled.
+              User<span style={{fontWeight: 'lighter'}}>plane</span>
             </Heading>
           </Link>
 
