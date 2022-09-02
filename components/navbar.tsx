@@ -46,7 +46,7 @@ export function NavBar({categories, selectedCategoryName}
           <Link href="/">
             <Heading size={[2, 3, 4]}>
             <span style={{fontWeight: 'lighter', color: 'green'}}>DAL-</span>
-            <span style={{ color: 'green'}}>LE</span>
+            <span style={{ color: 'green'}}>Le.</span>
             </Heading>
           </Link>
 
