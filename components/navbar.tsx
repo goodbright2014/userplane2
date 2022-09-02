@@ -24,7 +24,15 @@ export function NavBar({categories, selectedCategoryName}
   ))]
 
   return (
-      <Card borderBottom paddingTop={2} paddingBottom={1}>
+      <Card borderBottom  
+            paddingTop={2} 
+            paddingBottom={1} 
+            style={{
+              zIndex: '40',
+              position:'fixed', 
+              right:'0px', 
+              left:'0px', 
+              width:'full' }}>
         
         <Flex justify='flex-end'>
           <Box paddingRight={[0, 2]}>
@@ -36,7 +44,8 @@ export function NavBar({categories, selectedCategoryName}
 
           <Link href="/">
             <Heading size={[2, 3, 4]}>
-              User<span style={{fontWeight: 'lighter'}}>plane</span>
+            <span style={{fontWeight: 'lighter', color: 'green'}}>DAL-</span>
+            <span style={{ color: 'green'}}>LE</span>
             </Heading>
           </Link>
 

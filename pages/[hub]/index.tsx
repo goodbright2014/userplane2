@@ -69,7 +69,13 @@ export default function Hub({categories, subsectionArticleData, categoryData, pr
   return (
     <>
       <NavBar categories={categories} />
-      <Container width={1}>
+      <Container width={1}
+              style={{
+          
+                position:'relative', 
+                top:'150px', 
+                
+                }}>
         <Box paddingY={[3,5]}>
           <Heading size={2}>
             <Inline>

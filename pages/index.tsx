@@ -46,9 +46,18 @@ function IndexPage({categories, featuredArticleData, recentArticleData, preview}
   return (
     <>
       <NavBar categories={categories} />
-      <Card flex={1} paddingX={[3, 4, 5]} paddingY={[3, 4, 5]}>
+      <Card flex={1} paddingX={[3, 4, 5]} paddingY={[3, 4, 5]}
+        style={{
+          
+          position:'relative', 
+          top:'150px', 
+          
+          }}
+          >
         <Stack space={[3, 4, 5]}>
+          {/* index articles grid */}
           <IndexArticleGrid features={formattedFeatures} /> 
+          {/* done */}
           <Container width={1}>
             { articlesByMonth.map((month, i) => (
               <SubsectionBar hub="" subsectionArticles={{...month, slug: ""}} key={i} />

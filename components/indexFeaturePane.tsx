@@ -18,6 +18,13 @@ const PaneImage = styled.img`
   object-fit: cover;
   opacity: 0.65;
 `
+const DemoImage = styled.img`
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 1;
+`
+
 
 const OverlayText = styled.div`
   color: white;
@@ -36,7 +43,7 @@ export function IndexFeaturePane({feature, headingSize}: {feature: Feature, head
   return (
     <Link href={feature.url}>
       <PaneContainer>
-        <PaneImage src={imageUrl} />
+        <DemoImage src={imageUrl} />
         <OverlayText>
           <Heading size={headingSize}>
             { feature.title }

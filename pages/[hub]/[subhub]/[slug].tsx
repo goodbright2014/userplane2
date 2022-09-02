@@ -78,11 +78,19 @@ export default function ArticlePage({categories, articleData, preview}
   return (
     <>
       <NavBar categories={categories} />
-      <Breadcrumbs article={article} />
+      <Breadcrumbs article={article} 
+      />
 
       <Flex>
-        <Box paddingLeft={3} flex={2}>
+        <Box paddingLeft={3} flex={2}
+         style={{
+          
+          position:'relative', 
+          top:'150px', 
+          
+          }}>
           <Stack space={2}>
+            <br />
             <SocialBar />
             <Box style={{maxHeight: '800px'}}>
      

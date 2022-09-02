@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"next\" ",
+    "dev": "next dev",
     "start": "next start",
     "build": "npm run build:sanity && npm run build:web",
     "build:web": "next build",
