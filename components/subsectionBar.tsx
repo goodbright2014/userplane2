@@ -13,7 +13,13 @@ export function SubsectionBar({hub, subsectionArticles}
     const heading = (<Heading size={1}>{ subsectionArticles.name }</Heading>)
 
     return (
-      <Container width={1}>
+      <Container width={1}
+      style={{
+          
+        
+        padding:'50px', 
+        
+        }}>
         <Card borderBottom style={{backgroundColor: "#FCFCFF"}} paddingTop={5} paddingBottom={3}>
      { (subsectionArticles.slug && subsectionArticles.slug != 'undefined') ? 
             (<Link href={`/${hub}/${subsectionArticles.slug}`}>

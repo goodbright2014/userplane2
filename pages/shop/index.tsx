@@ -12,7 +12,13 @@ export default function Shop({categories, products}
     return (
       <>
         <NavBar categories={categories} />
-        <Box paddingY={3}> 
+        <Box paddingY={3} 
+          style={{
+          
+            position:'relative', 
+            top:'150px', 
+            
+            }}> 
           <ShopGrid sectionTitle={"All Products"} products={products} />)
         </Box>
       </> 

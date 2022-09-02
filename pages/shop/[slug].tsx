@@ -34,7 +34,13 @@ export default function ProductPage({categories, productData, preview}
   return (
     <>
       <NavBar categories={categories} />
-      <Grid columns={[1, 1, 1, 2]}>
+      <Grid columns={[1, 1, 1, 2]}
+        style={{
+          
+          position:'relative', 
+          top:'250px', 
+          
+          }}>
         <Flex flex={1} justify='center' margin={5} padding={[2, 3, 5]}>
           <ResponsiveFixedRatioImage imageUrl={urlFor(product.image).url() ?? ""} />
         </Flex> 

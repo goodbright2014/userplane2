@@ -45,7 +45,7 @@ export function IndexFeaturePane({feature, headingSize}: {feature: Feature, head
       <PaneContainer>
         <DemoImage src={imageUrl} />
         <OverlayText>
-          <Heading size={headingSize}>
+          <Heading size={headingSize} style={{ color: 'white'}}>
             { feature.title }
           </Heading>
         </OverlayText>

@@ -12,7 +12,7 @@ export function NavBar({categories, selectedCategoryName}
 
   const shopButton = (
     <Link href='/shop' key='shop'>
-      <Button mode='bleed' tone='positive' padding={2} text='Shop' />
+      <Button mode='bleed'  padding={2} text='Shop' />
     </Link>
   )
 
@@ -32,7 +32,8 @@ export function NavBar({categories, selectedCategoryName}
               position:'fixed', 
               right:'0px', 
               left:'0px', 
-              width:'full' }}>
+              width:'full' ,
+              opacity:'0.70'}}>
         
         <Flex justify='flex-end'>
           <Box paddingRight={[0, 2]}>
