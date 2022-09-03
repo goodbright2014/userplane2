@@ -10,6 +10,15 @@ import { handleGroupedItems } from '$utils/helpers'
 import { createArticlePageQuery, productQuery }  from '$utils/sanityGroqQueries'
 
 import MuxPlayer from '@mux/mux-video-react';
+import styled from 'styled-components'
+
+const HeddingText = styled.div`
+  
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+
+`
 
 const assetDocument = {
   "data":{
@@ -109,8 +118,11 @@ export default function ArticlePage({categories, articleData, preview}
             </Box>
               <Box padding={[1, 3, 4]}>
                 <Box paddingY={3}>
-                  <Heading size={[2, 3, 4]}>
+                  <Heading size={[2, 3, 4]} >
+                  <HeddingText>
                     { article.title }
+                  </HeddingText>
+                   
                   </Heading>
                 </Box>
                 <Text>

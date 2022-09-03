@@ -13,7 +13,7 @@ export function IndexArticleGrid({features}: {features: Feature[]}) {
       gap={[1, 1, 2, 4]}
       >
 
-      <Box columnStart={1} columnEnd={[1, 1, 3]} rowStart={1} rowEnd={[1,1,3]}>
+      <Box columnStart={1} columnEnd={[1, 1, 1]} rowStart={1} rowEnd={[1,1,3]}>
         <IndexFeaturePane feature={features[0]} headingSize={[2,2,4]} />
       </Box>  
 

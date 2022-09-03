@@ -23,6 +23,10 @@ const DemoImage = styled.img`
   width: 100%;
   object-fit: cover;
   opacity: 1;
+  @media (max-width: 768px) {
+    Width: 768px;
+    Height: 550px;
+  }
 `
 
 
@@ -44,6 +48,7 @@ export function IndexFeaturePane({feature, headingSize}: {feature: Feature, head
     <Link href={feature.url}>
       <PaneContainer>
         <DemoImage src={imageUrl} />
+
         <OverlayText>
           <Heading size={headingSize} style={{ color: 'white'}}>
             { feature.title }
