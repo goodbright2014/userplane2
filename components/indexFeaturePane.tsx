@@ -25,17 +25,47 @@ const DemoImage = styled.img`
   opacity: 1;
   @media (max-width: 768px) {
     Width: 768px;
-    Height: 550px;
+    height: 100%;
+    object-fit: cover;
   }
 `
 
-
+const OverlayHeadingText = styled.div`
+  color: white;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 50%;
+  font-size: 64px;
+  font-weight: bold;
+  @media (max-width: 768px) {
+    color: white;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 50%;
+    font-size: 32px;
+    font-weight: bold;
+  }
+`
 const OverlayText = styled.div`
   color: white;
   position: absolute;
-  top: 20%;
+  top: 30%;
   left: 5%;
   width: 50%;
+  font-size: 22px;
+  font-weight: bold;
+
+  @media (max-width: 768px) {
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    width: 50%;
+    font-size: 16px;
+    font-weight: light;
+  }
 `
 
 export function IndexFeaturePane({feature, headingSize}: {feature: Feature, headingSize: number[]}) {
@@ -48,12 +78,18 @@ export function IndexFeaturePane({feature, headingSize}: {feature: Feature, head
     <Link href={feature.url}>
       <PaneContainer>
         <DemoImage src={imageUrl} />
+          
+          <OverlayHeadingText>
+          Modular Construction 
+          </OverlayHeadingText>  
 
-        <OverlayText>
-          <Heading size={headingSize} style={{ color: 'white'}}>
-            { feature.title }
-          </Heading>
-        </OverlayText>
+          <OverlayText>
+          {/* feature.title */}
+          (주)케이씨모듈러
+          </OverlayText>
+           
+        
+        
       </PaneContainer>
     </Link>
   )

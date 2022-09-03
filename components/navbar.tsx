@@ -35,11 +35,14 @@ export function NavBar({categories, selectedCategoryName}
               width:'full' ,
               opacity:'0.70'}}>
         
+        {/* 
         <Flex justify='flex-end'>
           <Box paddingRight={[0, 2]}>
             <Button mode='ghost' icon={MdShoppingCart} text="Cart" onClick={() => toggleCart()} />
           </Box>
         </Flex>
+        */}
+
 
         <Stack space={4} style={{textAlign: 'center'}}>
 
