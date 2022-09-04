@@ -10,14 +10,12 @@ import { handleGroupedItems } from '$utils/helpers'
 import { createArticlePageQuery, productQuery }  from '$utils/sanityGroqQueries'
 
 import MuxPlayer from '@mux/mux-video-react';
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const HeddingText = styled.div`
-  
   @media (max-width: 768px) {
     font-size: 16px;
   }
-
 `
 
 const assetDocument = {
