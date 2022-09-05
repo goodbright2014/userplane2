@@ -18,8 +18,10 @@ function App({Component, pageProps, router}: AppProps) {
               name="viewport"
               content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
             />
-          <link rel="preconnect" href="https://fonts.gstatic.com" />
-          <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link rel="preconnect" href="https://fonts.gstatic.com" />
+            <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@900&family=Righteous&display=swap" rel="stylesheet"></link>
           </Head>
           <Box>
             <Component {...pageProps} />

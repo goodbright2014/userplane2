@@ -54,7 +54,7 @@ export const fonts: ThemeFonts = {
   },
   heading: {
     family:
-    'Poppins, -apple-system , "Segoe UI", Roboto, sans-serif',
+    '-apple-system , "Segoe UI", Roboto, sans-serif',
     weights: {
       regular: 700,
       medium: 800,
@@ -166,7 +166,7 @@ export const fonts: ThemeFonts = {
   },
   text: {
     family:
-    'Poppins, -apple-system , "Segoe UI", Roboto, sans-serif',
+    '-apple-system , "Segoe UI", Roboto, sans-serif',
     weights: {
       regular: 500,
       medium: 600,

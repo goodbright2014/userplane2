@@ -6,17 +6,25 @@ import { useToggleCart } from '../contexts/bigcommerce-context'
 import styled from 'styled-components'
 
 const IndexFeatureHeading = styled.div`
-  color: green;
-
+  color: #0B999E;
+  
   width: 95%;
-  font-size: 49px;
-  font-weight: bold;
+  font-size: 24px;
+  font-weight: normal;
+  font-family: 'Righteous', cursive;
+  padding-top: 16px;
+  padding-left: 8px;
+  margin-left: 8px;
+  letter-spacing: 8px;
+
+  text-align: start;
 
   @media (max-width: 768px) {
-    color: green;
+    color: 0B999E;
     width: 95%;
-    font-size: 32px;
-    font-weight: light;
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 8px;
   }
 `
 
@@ -41,7 +49,7 @@ export function NavBar({categories, selectedCategoryName}
 
   return (
       <Card borderBottom  
-            paddingTop={2} 
+            paddingTop={4} 
             paddingBottom={1} 
             style={{
               zIndex: '40',
@@ -51,28 +59,41 @@ export function NavBar({categories, selectedCategoryName}
               width:'full' ,
               opacity:'0.70'}}>
         
-        
+        {/*
         <Flex justify='flex-end'>
           <Box paddingRight={[0, 2]}>
             <Button mode='ghost' icon={MdShoppingCart} text="Cart" onClick={() => toggleCart()} />
           </Box>
         </Flex>
-        
-        <Stack space={4} style={{textAlign: 'center'}}>
-
-          <Link href="/">
+            */}     
+        <Flex justify='center' >
+          <div style={{width: '64px', height: '64px'}}>
+            <Link href="/"  >
+              <img src='logo.png' style={{width: '64px', height: '64px' }} /> 
+            </Link>
+          </div>
+          <div style={{width: '128px', height: '64px'}}>
+            <IndexFeatureHeading>
+              R3MS
+            </IndexFeatureHeading>
+          </div>
+        </Flex>
+<br />
+        <Stack space={4} >
+ 
+          
+          
             {/*<Heading size={[2, 3, 4]}>*/}
             {/*<span style={{fontWeight: 'lighter', color: 'green'}}>DAL-</span>*/}
             {/*<span style={{ color: 'green'}}>Architecture News & Buildings</span>*/}
-            <IndexFeatureHeading>
+           
+            {/*<IndexFeatureHeading>
               Architecture News& 
-            </IndexFeatureHeading>
+            </IndexFeatureHeading>*/}
             {/*</Heading>*/}
-          </Link>
-
-          <Inline space={[0,1,4,5]} style={{textAlign: 'center'}}>
-            { navButtons }
-          </Inline>
+            <Inline space={[0,1,4,5]} style={{textAlign: 'center'}}>
+              { navButtons }
+            </Inline>
 
         </Stack>
 
