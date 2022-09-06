@@ -21,7 +21,7 @@ function App({Component, pageProps, router}: AppProps) {
 
             <link rel="preconnect" href="https://fonts.googleapis.com" />
             <link rel="preconnect" href="https://fonts.gstatic.com" />
-            <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@900&family=Righteous&display=swap" rel="stylesheet"></link>
+            <link href="https://fonts.googleapis.com/css2?family=Anton&family=Gowun+Batang&family=Poppins:wght@900&family=Righteous&display=swap" rel="stylesheet" />
           </Head>
           <Box>
             <Component {...pageProps} />

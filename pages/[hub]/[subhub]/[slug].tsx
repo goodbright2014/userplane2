@@ -17,6 +17,27 @@ const HeddingText = styled.div`
     font-size: 16px;
   }
 `
+const ArticleText = styled.div`
+ 
+  width: 95%;
+  font-size: 24px;
+  font-weight: normal;
+
+  padding-top: 16px;
+  padding-left: 8px;
+  margin-left: 8px;
+  letter-spacing: 8px;
+
+  text-align: start;
+
+  @media (max-width: 768px) {
+  
+    width: 95%;
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 8px;
+  }
+`
 
 const assetDocument = {
   "data":{
@@ -117,15 +138,28 @@ export default function ArticlePage({categories, articleData, preview}
               <Box padding={[1, 3, 4]}>
                 <Box paddingY={3}>
                   <Heading size={[2, 3, 4]} >
-                  <HeddingText>
+
+                  { article.slug === "cherry-blossom-armchair-in-the-water" ? (
+                  <ArticleText>
+                     { article.title }
+                  </ArticleText>
+                  ):(
+                    <HeddingText>
                     { article.title }
                   </HeddingText>
-                   
+                  )}                 
                   </Heading>
                 </Box>
-                <Text>
-                  <PortableText blocks={content} />
-                </Text>
+               
+                { article.slug === "cherry-blossom-armchair-in-the-water" ? (
+                  <ArticleText>
+                    <PortableText blocks={content} /> 
+                  </ArticleText>
+                  ):(
+                    <Text>
+                    <PortableText blocks={content} /> 
+                    </Text>
+                  )}
               </Box>
             </Stack>
           </Box>
