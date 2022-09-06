@@ -22,11 +22,11 @@ const ArticleText = styled.div`
   width: 95%;
   font-size: 24px;
   font-weight: normal;
-
+  font-family: 'Gowun Batang', serif;
   padding-top: 16px;
   padding-left: 8px;
   margin-left: 8px;
-  letter-spacing: 8px;
+  letter-spacing: 0px;
 
   text-align: start;
 
@@ -35,7 +35,7 @@ const ArticleText = styled.div`
     width: 95%;
     font-size: 24px;
     font-weight: normal;
-    letter-spacing: 8px;
+    letter-spacing: 0px;
   }
 `
 
