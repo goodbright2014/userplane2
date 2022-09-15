@@ -3,9 +3,11 @@ import { Heading, Button } from '@sanity/ui'
 import { Feature } from '../types'
 import { urlFor } from '$utils/sanity'
 import styled from 'styled-components'
+import Image from 'next/future/image'
+
 
 const PaneContainer = styled.div`
-  height: 100%;
+  height: 100vw;
   width: 100%;
   background: black;
   overflow: hidden;
@@ -77,7 +79,9 @@ export function IndexFeaturePane({feature, headingSize}: {feature: Feature, head
   return (
     <Link href={feature.url}>
       <PaneContainer>
-        <DemoImage src={imageUrl} />
+        {/*<DemoImage src={imageUrl} />*/}
+       
+        <Image src={imageUrl} sizes="100vw" fill  alt=''/>
           
           <OverlayHeadingText>
           Modular Construction 

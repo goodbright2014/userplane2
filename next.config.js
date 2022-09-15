@@ -8,6 +8,9 @@ const STUDIO_REWRITE = {
 
 module.exports = {
   //subpath routing, per https://nextjs.org/docs/advanced-features/i18n-routing
+  images: {
+    domains: ['cdn.sanity.io'],
+  },
   i18n: {
     locales: ['en-US', 'fr', 'es'],
     defaultLocale: 'en-US',
